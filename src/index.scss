@@ -11,25 +11,25 @@ body {
 }
 
 .wrapper {
-background: #FFFFFF;
-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
-border-radius: 20px;
-max-width: 1080px;
-margin: 50px auto;
-padding: 50px;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  max-width: 1080px;
+  margin: 50px auto;
+  padding: 50px;
 }
 
-header { 
-  border-bottom: 1px solid #EAEAEA;
-  
+header {
+  border-bottom: 1px solid #eaeaea;
+
   img {
     margin-right: 15px;
   }
-    
-  p, h3 {
-    margin: 0; 
-  }
 
+  p,
+  h3 {
+    margin: 0;
+  }
 }
 
 .content {
@@ -38,52 +38,8 @@ header {
   }
 }
 
-.card {
-  border: 1px solid #f3f3f3;
-  padding: 30px;
-  width: 220px; 
-  border-radius: 40px;
-  margin-right: 30px;
-  transition: box-shadow 0.2s ease-in-out, transform box-shadow 0.2s ease-in-out; 
-
-  &:hover {
-    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.06);
-    transform: translateY(-5px);
-  }
-
-  .favorite {
-    position: absolute;
-    cursor: pointer;
-  }
-
-  h5 {
-    font-weight: 400;
-    font-size: 14px;
-  }
-
-  span {
-    font-size: 13px;
-    opacity: 0.5;
-    text-transform: uppercase;
-  }
-
-  b {
-    font-size: 13px;
-  }
-}
-
-.button {
-  background: #FFFFFF;
-  border: 1px solid #F2F2F2;
-  box-sizing: border-box;
-  border-radius: 8px;
-  height: 32px;
-  width: 32px;
-  cursor: pointer;
-}
-
-.search-block  {
-  border: solid 1px #F3F3F3;
+.search-block {
+  border: solid 1px #f3f3f3;
   border-radius: 10px;
   padding: 0 15px;
 
@@ -91,9 +47,8 @@ header {
     border: 0;
     padding: 13px;
     font-size: 16px;
-    width: 200px;    
+    width: 200px;
   }
-
 }
 .overlay {
   position: absolute;
@@ -112,7 +67,7 @@ header {
   right: 0;
   width: 420px;
   height: 100%;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
   padding: 30px;
 
@@ -122,13 +77,13 @@ header {
   }
 
   h2 {
-    margin: 0; 
+    margin: 0;
   }
 }
 
 .cartItem {
-  border: 1px solid #F3F3F3;
-  border-radius: 20px; 
+  border: 1px solid #f3f3f3;
+  border-radius: 20px;
   overflow: hidden;
   padding: 20px;
 
@@ -138,12 +93,12 @@ header {
     background-size: contain;
     background-position: 0 -5px;
     background-repeat: no-repeat;
-    margin-right: 20px; 
+    margin-right: 20px;
   }
 
   p {
     font-size: 16px;
-    margin: 0; 
+    margin: 0;
   }
 
   b {
@@ -151,7 +106,7 @@ header {
   }
 
   .removeBtn {
-    opacity: 0.5 ;
+    opacity: 0.5;
     transition: opacity 0.15s ease-in-out;
     cursor: pointer;
 
@@ -170,11 +125,11 @@ header {
         transform: translateX(5px);
       }
     }
-    
+
     img {
       transition: transform 0.15s ease-in-out;
       position: absolute;
-      right: 30px; 
+      right: 30px;
       top: 20px;
     }
   }
@@ -192,40 +147,33 @@ header {
     div {
       flex: 1;
       height: 1px;
-      border-bottom: 1px dashed #DFDFDF;
+      border-bottom: 1px dashed #dfdfdf;
       position: relative;
       top: -4px;
       margin: 0 7px;
     }
-    
-  } 
+  }
   .greenButton {
     width: 100%;
     height: 55px;
-    background: #9DD558;
+    background: #9dd558;
     border-radius: 18px;
     border: 0;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     transition: background 0.2s ease-in-out;
 
     &:hover {
-      background: lighten($color: #9DD558, $amount: 5%);
+      background: lighten($color: #9dd558, $amount: 5%);
     }
     &:active {
-      background: darken($color: #9DD558, $amount: 5%);
+      background: darken($color: #9dd558, $amount: 5%);
     }
-  } 
+  }
 }
 
 .items {
   flex: 1;
 }
-
-
-
-
-
-
