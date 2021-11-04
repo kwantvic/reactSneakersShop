@@ -40,12 +40,7 @@ function Drawer({ onClose, onRemove, items = [], opened }) {
       <div className={styles.drawer}>
         <h2 className="mb-30 d-flex justify-between">
           Корзина
-          <img
-            className="removeBtn cu-p"
-            src="/img/btn-remove.svg"
-            alt="Remove"
-            onClick={onClose}
-          />
+          <img className="removeBtn cu-p" src="img/btn-remove.svg" alt="Remove" onClick={onClose} />
         </h2>
 
         {items.length > 0 ? (
@@ -62,7 +57,7 @@ function Drawer({ onClose, onRemove, items = [], opened }) {
                   </div>
                   <img
                     className="removeBtn"
-                    src="/img/btn-remove.svg"
+                    src="img/btn-remove.svg"
                     alt="Remove"
                     onClick={() => {
                       onRemove(obj.id);
