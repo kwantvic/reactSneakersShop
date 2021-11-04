@@ -1,13 +1,15 @@
 import React from 'react';
 import axios from 'axios';
 
-import Info from './Info';
-import AppContext from '../context';
+import Info from '../Info';
+import { useCart } from '../../hooks/UseCart';
+
+import styles from './Drawer.module.scss';
 
 const delay = (msec) => new Promise((resolve) => setTimeout(resolve, msec));
 
-function Drawer({ onClose, onRemove, items = [] }) {
-  const { cartItems, setCartItems } = React.useContext(AppContext);
+function Drawer({ onClose, onRemove, items = [], opened }) {
+  const { cartItems, setCartItems, totalPrice } = useCart();
   const [orderId, setOrderId] = React.useState(null);
   const [isOrderComplite, setIsOrderComplete] = React.useState(false);
   const [isLoading, setIsLoading] = React.useState(false);
@@ -34,8 +36,8 @@ function Drawer({ onClose, onRemove, items = [] }) {
   };
 
   return (
-    <div className="overlay">
-      <div className="drawer">
+    <div className={`${styles.overlay} ${opened ? styles.overlayVisible : ''}`}>
+      <div className={styles.drawer}>
         <h2 className="mb-30 d-flex justify-between">
           Корзина
           <img
@@ -48,7 +50,7 @@ function Drawer({ onClose, onRemove, items = [] }) {
 
         {items.length > 0 ? (
           <div className="d-flex flex-column flex">
-            <div className="items">
+            <div className="items flex">
               {items.map((obj) => (
                 <div key={obj.id} className="cartItem d-flex align-center mb-20">
                   <div
@@ -75,12 +77,12 @@ function Drawer({ onClose, onRemove, items = [] }) {
                 <li className="d-flex">
                   <span>Итого:</span>
                   <div></div>
-                  <b>4498 грн</b>
+                  <b>{totalPrice} грн</b>
                 </li>
                 <li className="d-flex">
                   <span>Налог 5%:</span>
                   <div></div>
-                  <b>274 грн</b>
+                  <b>{Math.round((totalPrice / 100) * 5)} грн</b>
                 </li>
               </ul>
 
