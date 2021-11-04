@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/reactSneakersShop/static/css/main.34c64a53.chunk.css",
-    "main.js": "/reactSneakersShop/static/js/main.0e3e478c.chunk.js",
-    "main.js.map": "/reactSneakersShop/static/js/main.0e3e478c.chunk.js.map",
+    "main.js": "/reactSneakersShop/static/js/main.24b66bb4.chunk.js",
+    "main.js.map": "/reactSneakersShop/static/js/main.24b66bb4.chunk.js.map",
     "runtime-main.js": "/reactSneakersShop/static/js/runtime-main.c5041985.js",
     "runtime-main.js.map": "/reactSneakersShop/static/js/runtime-main.c5041985.js.map",
     "static/css/2.1cdcfe91.chunk.css": "/reactSneakersShop/static/css/2.1cdcfe91.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.1cdcfe91.chunk.css",
     "static/js/2.b2b84c33.chunk.js",
     "static/css/main.34c64a53.chunk.css",
-    "static/js/main.0e3e478c.chunk.js"
+    "static/js/main.24b66bb4.chunk.js"
   ]
 }
